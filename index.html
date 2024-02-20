@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resume</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./resume.css">
+    <script src="./resume.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+    <h1>⭐My Resume Page⭐</h1>
+    <div class="container">
+        <div class="row">
+            <nav class="col-sm-3 col-4" id="myScrollspy">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section1"><div class="textcolor">基本資料</div></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2"><div class="textcolor">工作經歷</div></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3"><div class="textcolor">專長技能</div></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><div class="textcolor">作品集</div></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#section41">盆栽專題</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-sm-9 col-8">
+                <article id="section1">
+                    <h3>基本資料</h3>
+                    <table>
+                        <tr>
+                            <th>姓名</th>
+                            <td class="space">李鈺翔</td>
+                            <td>
+                                <img id="img" src="./image/pic2.jpg" alt="img">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>連絡電話</th>
+                            <td class="space">0966-558986</td>
+                        </tr>
+                        <tr>
+                            <th>email</th>
+                            <td class="space">yusiang0918@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>通訊地址</th>
+                            <td class="space" width="300">新北市三重區xx街xxx號x樓</td>
+                        </tr>
+                        <tr>
+                            <th>學歷</th>
+                            <td class="space">龍華科技大學</td>
+                        </tr>
+                    </table>
+                </article>
+                <br>
+                <br>
+                <article id="section2">
+                    <h3>工作經歷</h3>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>公司名稱</th>
+                                <th>工作職稱</th>
+                                <th>工作內容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>大賀智聯網</td>
+                                <td>研發助理工程師 </td>
+                                <td>BOM表建立核對、感測器測試</td>
+                            </tr>
+                            <tr>
+                                <td>分眾傳媒</td>
+                                <td>系統測試工程師 </td>
+                                <td>硬體功能測試</td>
+                            </tr>
+                            <tr>
+                                <td>吉鴻電子</td>
+                                <td>銷退維修工程師 </td>
+                                <td>RMA產品返修、測試</td>
+                            </tr>
+                            <tr>
+                                <td>亞美科科技</td>
+                                <td>組裝測試工程師 </td>
+                                <td>工業印表機電機配線、測試</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <br>
+                <br>
+                <article id="section3">
+                    <h3><span id="skill">專長技能</span></h3>
+                    <ul class="list-group list-group-flush" >
+                        <li class="list-group-item" >IOT物聯網:<span class="skilltext">Arduino、Web、Linux、Raspberry Pi</span></li>
+                        <li class="list-group-item">電路繪圖:<span class="skilltext">Orcad、Allegro</span></li>
+                        <li class="list-group-item">電子電機:<span class="skilltext">電機配線、電子維修</span> </li>
+                    </ul>
+                </article>
+                <br>
+                <br>
+                <article id="section41">
+                    <h3>作品集-智慧盆栽</h3>
+                    <img src="./image/plate.jpg" alt="智能培栽" width="450" height="350">
+                </article>
+                <br>
+                <br>
+                <article id="section42">
+                    <h3>自傳</h3>
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        翻閱自傳
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">                            
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h1 class="modal-title">自傳</h1>
+                                    <button type="button" class="close" data-dismiss="modal">x</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <h3>自傳</h3>
+                                    <p>我叫李鈺翔，之前從事的工作內容比較偏向硬體，之後的職涯規畫希望能朝向軟/韌體工程師發展.</p>
+                                    <p>目前也在持續的進修.</p>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <br>
+            <br>
+        </div>
+    </div>
+    
+</body>
+</html>
